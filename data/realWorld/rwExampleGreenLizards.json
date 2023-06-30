@@ -1,0 +1,286 @@
+{
+    "title": "real world geophylogeny on lizards (Jauss et al. 2021)",
+    "description": "real world example on lizards (Jauss et al. 2021)",
+    "map_width": 21,
+    "map_height": 12,
+    "num_leaves": 20,
+	"tree": {
+		"leaf": false,
+        "id": 38,
+        "left": {
+			"leaf": false,
+            "id": 36,
+            "left": {
+				"leaf": false,
+				"id": 27,
+				"left": {
+					"leaf": false,
+					"id": 23,
+					"left": {
+						"leaf": false,
+						"id": 22,
+						"left": {
+							"leaf": false,
+							"id": 21,
+							"left": {
+								"leaf": false,
+								"id": 20,
+								"left": {
+									"leaf": true,
+									"id": 0,
+									"label": "0",
+									"site_id": 0
+								},
+								 "right": {
+									"leaf": true,
+									"id": 1,
+									"label": "1",
+									"site_id": 1
+								}
+							},
+							 "right": {
+								"leaf": true,
+								"id": 2,
+								"label": "2",
+								"site_id": 2
+							}
+						}, 
+						"right": {
+							"leaf": true,
+							"id": 3,
+							"label": "3",
+							"site_id": 3
+						}
+					},
+					"right": {
+                        "leaf": true,
+                        "id": 4,
+                        "label": "4",
+                        "site_id": 4
+                    }
+				},
+				"right": {
+					"leaf": false,
+					"id": 26,
+					"left":  {
+						"leaf": false,
+						"id": 25,
+						"left":  {
+							"leaf": false,
+							"id": 24,
+							"left": {
+								"leaf": true,
+								"id": 5,
+								"label": "5",
+								"site_id": 5
+							},
+							"right": {
+								"leaf": true,
+								"id": 6,
+								"label": "6",
+								"site_id": 6
+							}
+						},
+						"right": {
+							"leaf": true,
+							"id": 7,
+							"label": "7",
+							"site_id": 7
+						}
+					},
+					"right": {
+						"leaf": true,
+						"id": 8,
+						"label": "8",
+						"site_id": 8
+					}
+				}
+			},
+			"right": {
+				"leaf": false,
+				"id": 35,
+				"left": {
+					"leaf": false,
+					"id": 34,
+					"left": {
+						"leaf": false,
+						"id": 32,
+						"left": {
+							"leaf": false,
+							"id": 30,
+							"left": {
+								"leaf": true,
+								"id": 9,
+								"label": "9",
+								"site_id": 9
+							},
+							"right": {
+								"leaf": false,
+								"id": 29,
+								"left": {
+									"leaf": true,
+									"id": 10,
+									"label": "10",
+									"site_id": 10
+								},
+								"right": {
+									"leaf": false,
+									"id": 28,
+									"left": {
+										"leaf": true,
+										"id": 11,
+										"label": "11",
+										"site_id": 11
+									},
+									"right": {
+										"leaf": true,
+										"id": 12,
+										"label": "12",
+										"site_id": 12
+									}
+								}
+							}
+						},
+						"right": {
+							"leaf": false,
+							"id": 31,
+							"left": {
+								"leaf": true,
+								"id": 13,
+								"label": "13",
+								"site_id": 13
+							},
+							"right": {
+								"leaf": true,
+								"id": 14,
+								"label": "14",
+								"site_id": 14
+							}
+						}
+					},
+					"right": {
+						"leaf": false,
+						"id": 33,
+						"left": {
+							"leaf": true,
+							"id": 15,
+							"label": "15",
+							"site_id": 15
+						},
+						"right": {
+							"leaf": true,
+							"id": 16,
+							"label": "16",
+							"site_id": 16
+						}
+					}
+				},
+				"right": {
+					"leaf": true,
+					"id": 17,
+					"label": "17",
+					"site_id": 17
+				}
+			}
+		},
+		"right": {
+			"leaf": false,
+			"id": 37,
+			"left": {
+				"leaf": true,
+				"id": 18,
+				"label": "18",
+				"site_id": 18
+			},
+			"right": {
+				"leaf": true,
+				"id": 19,
+				"label": "19",
+				"site_id": 19
+			}
+		}
+	},
+    "num_sites": 20,
+    "sites": [{
+            "x": 3.4375,
+            "y": 9.6875,
+            "cluster": 0
+        }, {
+            "x": 5.75,
+            "y": 9.5625,
+            "cluster": 0
+        }, {
+            "x": 6.1875,
+            "y": 8.25,
+            "cluster": 0
+        }, {
+            "x": 5.875,
+            "y": 8.25,
+            "cluster": 0
+        }, {
+            "x": 6.03125,
+            "y": 8.375,
+            "cluster": 0
+        }, {
+            "x": 8.0625,
+            "y": 9.59375,
+            "cluster": 1
+        }, {
+            "x": 9.1875,
+            "y": 8.875,
+            "cluster": 1
+        }, {
+            "x": 11.125,
+            "y": 10,
+            "cluster": 1
+        }, {
+            "x": 11.71875,
+            "y": 10.875,
+            "cluster": 1
+        }, {
+            "x": 10.53125,
+            "y": 7.6875,
+            "cluster": 2
+        }, {
+            "x": 11.875,
+            "y": 9.03125,
+            "cluster": 2
+        }, {
+            "x": 10.34375,
+            "y": 8.0625,
+            "cluster": 2
+        }, {
+            "x": 11.90625,
+            "y": 7.96875,
+            "cluster": 2
+        }, {
+            "x": 13.0625,
+            "y": 10,
+            "cluster": 2
+        }, {
+            "x": 14.375,
+            "y": 7.59375,
+            "cluster": 2
+        }, {
+            "x": 13.21875,
+            "y": 10.0625,
+            "cluster": 2
+        }, {
+            "x": 14.1875,
+            "y": 7.9375,
+            "cluster": 2
+        }, {
+            "x": 12.5,
+            "y": 10.1875,
+            "cluster": 2
+        }, {
+            "x": 15.4375,
+            "y": 10.5625,
+            "cluster": 3
+        }, {
+            "x": 15.84375,
+            "y": 10.4375,
+            "cluster": 3}
+    ],
+    "num_clusters": 4
+}

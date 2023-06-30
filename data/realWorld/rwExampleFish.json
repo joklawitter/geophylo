@@ -1,0 +1,203 @@
+{
+    "title": "test write-read geophylo",
+    "description": "real world example on fish (Williams and Johnson 2022)",
+    "map_width": 640,
+    "map_height": 400,
+    "num_leaves": 14,
+    "tree": {
+        "leaf": false,
+        "id": 26,
+        "left": {
+            "leaf": false,
+            "id": 18,
+            "left": {
+                "leaf": false,
+                "id": 14,
+                "left": {
+                    "leaf": true,
+                    "id": 8,
+                    "label": 8,
+                    "site_id": 8
+                },
+                "right": {
+                    "leaf": true,
+                    "id": 11,
+                    "label": 11,
+                    "site_id": 11
+                }
+            },
+            "right": {
+                "leaf": false,
+                "id": 17,
+                "left": {
+                    "leaf": true,
+                    "id": 0,
+                    "label": 0,
+                    "site_id": 0
+                },
+                "right": {
+                    "leaf": false,
+                    "id": 16,
+                    "left": {
+                        "leaf": true,
+                        "id": 12,
+                        "label": 12,
+                        "site_id": 12
+                    },
+                    "right": {
+                        "leaf": false,
+                        "id": 15,
+                        "left": {
+                            "leaf": true,
+                            "id": 4,
+                            "label": 4,
+                            "site_id": 4
+                        },
+                        "right": {
+                            "leaf": true,
+                            "id": 13,
+                            "label": 13,
+                            "site_id": 13
+                        }
+                    }
+                }
+            }
+        },
+        "right": {
+            "leaf": false,
+            "id": 25,
+            "left": {
+                "leaf": true,
+                "id": 2,
+                "label": 2,
+                "site_id": 2
+            },
+            "right": {
+                "leaf": false,
+                "id": 24,
+                "left": {
+                    "leaf": false,
+                    "id": 19,
+                    "left": {
+                        "leaf": true,
+                        "id": 5,
+                        "label": 5,
+                        "site_id": 5
+                    },
+                    "right": {
+                        "leaf": true,
+                        "id": 7,
+                        "label": 7,
+                        "site_id": 7
+                    }
+                },
+                "right": {
+                    "leaf": false,
+                    "id": 23,
+                    "left": {
+                        "leaf": true,
+                        "id": 3,
+                        "label": 3,
+                        "site_id": 3
+                    },
+                    "right": {
+						"leaf": false,
+						"id": 22,
+						"left": {
+							"leaf": true,
+							"id": 1,
+							"label": 1,
+							"site_id": 1
+						},
+						"right": {
+							"leaf": false,
+							"id": 21,
+							"left": {
+								"leaf": true,
+								"id": 10,
+								"label": 10,
+								"site_id": 10
+							},
+							"right": {
+								"leaf": false,
+								"id": 20,
+								"left": {
+									"leaf": true,
+									"id": 6,
+									"label": 6,
+									"site_id": 6
+								},
+								"right": {
+									"leaf": true,
+									"id": 9,
+									"label": 9,
+									"site_id": 9
+								}
+							}
+						}
+					}
+                }
+            }
+        }
+    },
+    "num_sites": 14,
+    "sites": [{
+            "x": 157,
+            "y": 172,
+            "cluster": 0
+        }, {
+            "x": 94,
+            "y": 108,
+            "cluster": 0
+        }, {
+            "x": 92,
+            "y": 83,
+            "cluster": 0
+        }, {
+            "x": 153,
+            "y": 122,
+            "cluster": 0
+        }, {
+            "x": 294,
+            "y": 167,
+            "cluster": 0
+        }, {
+            "x": 270,
+            "y": 185,
+            "cluster": 0
+        }, {
+            "x": 249,
+            "y": 234,
+            "cluster": 0
+        }, {
+            "x": 271,
+            "y": 288,
+            "cluster": 0
+        }, {
+            "x": 310,
+            "y": 322,
+            "cluster": 0
+        }, {
+            "x": 330,
+            "y": 307,
+            "cluster": 0
+        }, {
+            "x": 433,
+            "y": 292,
+            "cluster": 0
+        }, {
+            "x": 570,
+            "y": 373,
+            "cluster": 0
+        }, {
+            "x": 408,
+            "y": 251,
+            "cluster": 0
+        }, {
+            "x": 410,
+            "y": 217,
+            "cluster": 0
+        }
+    ],
+    "num_clusters": 0
+}
