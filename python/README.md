@@ -5,7 +5,7 @@ Make sure you have Docker and Docker Compose installed and running *(https://doc
 
 First, the proper environment variables have to be set in any case.
 
-## Environemt Variables
+## Environment Variables
 
 Depending on your use case, a number of environment variables are relevant. The EXAMPLE.env lists them and explains which variables are relevant for you.
 
