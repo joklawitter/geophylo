@@ -31,13 +31,13 @@ The Java implementation includes the following components:
 
 ### Python Implementation
 
-TBA - The Python implementation solves the external labeling problem using Gurobi as an integer linear programming (ILP) solver. 
+The Python implementation solves the external labeling problem using Gurobi as an integer linear programming (ILP) solver. 
 
 
 ### Additional Resources
 
-In addition to the code to generate realistic synthetic instances, we have included several real-world examples used in our experiments. 
-If you utilize these examples in your work, we request that you cite the respective references mentioned in our paper.
+In addition to the code to generate realistic synthetic instances, we have included the generated instances and three real-world examples used in our experiments. 
+If you utilize the real world examples in your work, we would appreciate if you cite the respective references.
 
 ## License
 
@@ -49,7 +49,8 @@ If you use this repository or find it helpful in your research or project, pleas
 
 > Jonathan Klawitter, Felix Klesen, Joris Y. Scholl, Thomas C. van Dijk, and Alexander Zaft. 
 > Visualizing Geophylogenies – Internal and External Labeling with Phylogenetic Tree Constraints. 
-> *Geographic Information Science (GIScience)*, LIPIcs, 2023. (to appear)
+> *International Conference on Geographic Information Science (GIScience23)*, LIPIcs 277 : 5:1-5:16, 2023 
+> [doi: 10.4230/LIPIcs.GIScience.2023.5](https://doi.org/10.4230/LIPIcs.GIScience.2023.5)
 
 ## Help
 
