@@ -32,7 +32,7 @@ The Java implementation includes the following components:
 ### Python Implementation
 
 The Python implementation solves the external labeling problem using Gurobi as an integer linear programming (ILP) solver. 
-
+In addition, a prototype UI is provided accessible as local webserver.
 
 ### Additional Resources
 
