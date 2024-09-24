@@ -1,0 +1,15 @@
+# Indicate the Gurobi reference image
+FROM gurobi/python:10.0.2_3.8
+
+# Keeps Python from generating .pyc files in the container
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# Turns off buffering for easier container logging
+ENV PYTHONUNBUFFERED=1
+
+# Install pip requirements
+COPY requirementsCLI.txt .
+RUN python -m pip install -r requirementsCLI.txt
+
+WORKDIR /app
+COPY . /app

@@ -1,0 +1,9 @@
+numpy==1.21.6
+scipy==1.7.3
+pyproj==3.5.0
+SQLAlchemy==2.0.20
+biopython==1.81
+celery==5.3.4
+geojson==3.0.1
+redis==5.0.1
+mysql-connector-python==8.2.0

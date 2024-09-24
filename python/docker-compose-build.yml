@@ -1,0 +1,46 @@
+version: '3.4'
+
+services:
+  db:
+    image: mariadb
+    environment:
+      MARIADB_DATABASE: phyloptimize
+      MARIADB_ROOT_PASSWORD: toor
+    volumes:
+      - db-volume:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mariadb-admin" ,"ping", "--password=toor", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+  redis:
+    image: redis
+  web:
+    env_file:
+      - './.env'
+    build:
+      context: .
+      dockerfile: DockerfileFrontend
+    image: cardijey/phyloptimize_frontend
+    command: gunicorn --bind 0.0.0.0:5000 app:app --chdir python
+    ports:
+      - ${flaskPort}:5000
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+  celery:
+    env_file:
+      - './.env'
+    build:
+      context: .
+      dockerfile: DockerfileBackend
+    image: cardijey/phyloptimize_backend
+    command: celery --workdir python -A tasks.celery worker --loglevel INFO
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+volumes:
+  db-volume:

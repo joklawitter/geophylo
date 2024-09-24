@@ -1,0 +1,1 @@
+parent.optimizeBtn.disabled = true;

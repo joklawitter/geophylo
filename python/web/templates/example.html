@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="position-absolute mt-3 start-50 translate-middle-x w-100 h-75 container">
+    <h2>Example Files</h2>
+    <p>Download, inspect and use these example input files to see how the tool works and how the input files should be formatted.</p>
+    <h2>Maps</h2>
+    <a href="/static/example_map_1_named.geojson" download>example_map_1_named.geojson</a><br>
+    <a href="/static/example_map_1_rect.geojson" download>example_map_1_rect.geojson</a><br>
+    <a href="/static/example_map_1.csv" download>example_map_1.csv</a><br>
+    <a href="/static/example_map_2_big.geojson" download>example_map_2_big.geojson</a><br>
+    <br>
+    <h2>Trees</h2>
+    <a href="/static/example_tree_1_branch_length.dnd" download>example_tree_1_branch_length.dnd</a><br>
+    <a href="/static/example_tree_1.dnd" download>example_tree_1.dnd</a><br>
+    <a href="/static/example_tree_2_big.dnd" download>example_tree_2_big.dnd</a><br>
+</div>
+{% endblock %}

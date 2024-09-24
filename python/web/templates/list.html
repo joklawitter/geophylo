@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="position-absolute mt-3 start-50 translate-middle-x w-100 h-75 container">
+    <div class="row position-relative h-100">
+        <div class="col-sm position-relative h-100">
+            <h2>Your Trees</h2>
+            <ul class="position-relative h-100 list-group mt-2 overflow-scroll">
+                {% for solutionId in privateSolutions %}
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h3>Id: {{ solutionId  }}</h3>
+                        </div>
+                        <div class="col-sm">
+                            <iframe src='/draw?id={{ solutionId  }}')></iframe>
+                        </div>
+                        <div class="col-sm">
+                            <a href='/edit?id={{ solutionId  }}'>Style and Download</a>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-sm position-relative h-100">
+            <h2>Public Trees By Everyone</h2>
+            <ul class="position-relative h-100 list-group mt-2 overflow-scroll">
+                {% for solution in solutions %}
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h3>Id: {{ solution['id'] }}</h3>
+                        </div>
+                        <div class="col-sm">
+                            <iframe src='/draw?id={{ solution['id'] }}')></iframe>
+                        </div>
+                        <div class="col-sm">
+                            <a href='/edit?id={{ solution['id'] }}'>Style and Download</a>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

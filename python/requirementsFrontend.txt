@@ -1,0 +1,12 @@
+svgwrite==1.4.3
+Flask==2.3.3
+pyproj==3.5.0
+SQLAlchemy==2.0.20
+biopython==1.81
+python-datauri==2.1.0
+geojson==3.0.1
+celery==5.3.4
+gunicorn==21.2.0
+redis==5.0.1
+mysql-connector-python==8.2.0
+requests==2.31.0

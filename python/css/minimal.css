@@ -1,0 +1,27 @@
+.tree {
+    fill: none;
+    stroke: black;
+    stroke-width: 0.05;
+}
+
+.label {
+    font-size: 0.5px;
+    fill: black;
+}
+
+.leader {
+    stroke: black;
+    stroke-width: 0.05;
+}
+
+.site > .marker {
+    scale: 0.1; 
+    stroke: black;
+    stroke-width: 0.5
+}
+
+.geo-background {
+    fill: white;
+    stroke: black;
+    stroke-width: 0.01;
+}

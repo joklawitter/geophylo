@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="position-relative m-5" id="inputDiv">
+        <div class="row">
+            <div class="col-sm">
+                <p class="text-justify">Just a Few Clicks to Get Started!</p>
+                <form id="inputForm" method="POST" enctype="multipart/form-data">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="lTypeSelect">Leader Type</label>
+                        <select class="form-select" id="lTypeSelect" name="lType">
+                            <option value="po">PO (Parallel Orthogonal)</option>
+                            <option value="s" selected>S (Straight)</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="phyloTreeFileInput">Phylogenetic Tree File</label>
+                        <input type="file" class="form-control" id="phyloTreeFileInput" name="phyloTreeFile"/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="geoFileInput">Geo-Coordinates File</label>
+                        <input type="file" class="form-control" id="geoFileInput" name="geoFile" accept=".json, .geojson, .csv"/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="connectInput">Connect Tree and Sites By</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Leave Empty to Connect by Order</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" id="connectInput" name="connect" onkeydown="disableOptimizeBtn()">
+                        </div>
+                    </div>
+                    <div class="form-outline">
+                        <label class="form-label" for="paddingInput">Padding %</label>
+                        <input type="number" id="paddingInput" class="form-control" value="20" name="sitesPadding" onkeydown="disableOptimizeBtn()"  min="0" max="100"/>
+                    </div>
+                    <br>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Make Public?
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" name="public" checked>
+                    </div>
+                    <button type="submit" class="btn btn-primary position-relative start-50 mt-5 translate-middle" name="cat" disabled="true" id="optimizeBtn">Optimize</button>
+                </form>
+            </div>
+            <div class="col-sm">
+                <iframe class="w-100 h-100" id="previewIframe" name="previewIframe" title="previewSvg"></iframe> 
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/index.js"></script>
+{% endblock %}

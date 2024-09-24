@@ -1,0 +1,59 @@
+.foo:hover {
+    stroke-width: 2 !important;
+}
+
+.tree {
+    fill: none;
+    stroke: black;
+    stroke-width: 1;
+    transition: 0.2s ease-in-out;
+    padding: 1px purple;
+}
+.tree:hover {
+    stroke: red;
+    transition: 0.2s ease-in-out;
+}
+
+.label {
+    font-family: Helvetica;
+    fill: black;
+    transition: 0.2s ease-in-out;
+}
+.label:hover {
+    fill: red;
+    transition: 0.2s ease-in-out;
+}
+
+.leaf > .label {
+    text-anchor: end;
+    transform: translate(0.5pt, -1pt) rotate(90deg);
+}
+.site > .label {
+    visibility: hidden;
+    transform: translate(3pt, 3pt) rotate(35deg);
+}
+
+.leader {
+    stroke: green;
+    stroke-width: 1;
+    fill: none;
+    transition: 0.2s ease-in-out;
+}
+.leader:hover { 
+    stroke: red;
+    opacity: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+.site > .marker {
+    scale: 1; 
+    fill: blue;
+    stroke: black;
+    stroke-width: 0.5
+}
+
+.geo-background {
+    fill: #f8f8f8;
+    stroke: black;
+    stroke-width: 1;
+}

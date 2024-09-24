@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="position-absolute start-50 translate-middle-x w-100 container">
+        <div class="row">
+            <div class="col-sm position-relative">
+                <p class="fs-2 text-justify">Style Your Tree</p>
+                <form id="editForm">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="branchLengthModeSelect">Branch Length Mode</label>
+                        <select class="form-select" id="branchLengthModeSelect">
+                            <option value="autoAlign" selected>Auto Align</option>
+                            <option value="custom">Custom Branch Length</option>
+                        </select>
+                    </div>
+                    
+                    <label class="form-label" for="leafHeightRange">Leaf Height</label>
+                    <div class="range">
+                        <input type="range" class="form-range" id="leafHeightRange" min="0" max="30" value="10"/>
+                    </div>
+            
+                    <label class="form-label" for="internalHeightRange">Internal Height</label>
+                    <div class="range">
+                        <input type="range" class="form-range" id="internalHeightRange" min="0" max="30" value="3"/>
+                    </div>
+            
+                    <label class="form-label" for="extraLeftRange">Extra Background Left</label>
+                    <div class="range">
+                        <input type="range" class="form-range" id="extraLeftRange" min="-30" max="30" value="0"/>
+                    </div>
+            
+                    <label class="form-label" for="extraRightRange">Extra Background Right</label>
+                    <div class="range">
+                        <input type="range" class="form-range" id="extraRightRange" min="-30" max="30" value="0"/>
+                    </div>
+            
+                    <label class="form-label" for="extraBotRange">Extra Background Bottom</label>
+                    <div class="range">
+                        <input type="range" class="form-range" id="extraBotRange" min="-30" max="30" value="0"/>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="backgroundModeSelect">Background</label>
+                        <select class="form-select" id="backgroundModeSelect">
+                            <option value="none" selected>None</option>
+                            <option value="osmEmbed">OpenStreetMap Embedded</option>
+                        </select>
+                    </div>
+                </form>
+
+                <div class="bg-danger text-white p-2">
+                    <p class="fs-3 text-justify">Settings That Require Re-Optimizing</p>
+                    <form id="dangerForm" method="POST" enctype="multipart/form-data">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="lTypeSelect">Leader Type</label>
+                            <select class="form-select" id="lTypeSelect" name="lType">
+                                <option value="po" {% if defaults.selectedPo %} selected {% endif %}>PO (Parallel Orthogonal)</option>
+                                <option value="s" {% if defaults.selectedS %} selected {% endif %}>S (Straight)</option>
+                            </select>
+                        </div>
+                        <div class="form-outline">
+                            <label class="form-label" for="paddingInput">Padding %</label>
+                            <input type="number" id="paddingInput" class="form-control"  value="{{ defaults['padding'] }}" name="sitesPadding" min="0" max="100"/>
+                        </div>
+                    </form>
+                </div>
+        
+                <div class="position-relative start-50 translate-middle-x mt-2">
+                    <div id="dangerBtnDiv" style="display:none">
+                        <button form="dangerForm" type="submit" class="btn btn-dark" name="cat" id="reOptimizeBtn">Re-Optimize</button>
+            
+                    <input form="dangerForm" class="btn btn-danger" type="reset" value="Reset" id="resetDangerBtn"/>
+                    </div>
+                    <div id="editBtnDiv">
+                        <a class="btn btn-primary" id="downloadBtn" download>
+                            Download
+                        </a>
+                        <input form="editForm" class="btn btn-danger" type="reset" value="Reset" id="resetEditBtn"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="position-relative start-0 top-0 w-100 h-100">
+                    <iframe class="position-absolute start-0 top-0 w-100 h-100" id="outSvgIframe" title="outputSvg"></iframe> 
+                    <div id="reOptimizeNoticeDiv" style="display:none; background-color: rgba(0, 0, 0, 0.8);" class="position-absolute start-0 top-0 w-100 h-100" >
+                        <p class="text-white position-absolute start-50 top-50 translate-middle fs-2 text-justify">Red settings have been changed<br>Please Re-Optimize or Reset</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/edit.js"></script>
+{% endblock %}
